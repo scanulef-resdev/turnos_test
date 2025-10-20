@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Pantalla de Turnos — Repuestos España</title>
+    <title>Pantalla de Turnos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Fondo blanco con texto principal en negro */
@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="mt-3">
-        <h1 class="title-main">🖥️ Pantalla Pública de Turnos</h1>
+        <h1 class="title-main">Pantalla Turnos</h1>
         <h4 id="reloj" class="muted"></h4>
     </div>
 
