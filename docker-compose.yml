@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./php
+    container_name: turnos_web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: turnos_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: turnos_db
+      MYSQL_USER: turnos_user
+      MYSQL_PASSWORD: turnos_pass
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
