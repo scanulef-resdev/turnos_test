@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="mt-3">
-        <h1 class="title-main">Pantalla Turnos</h1>
+        <h1 class="title-main">Pantalla Turnos v1</h1>
         <h4 id="reloj" class="muted"></h4>
     </div>
 
