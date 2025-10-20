@@ -6,9 +6,10 @@ services:
     container_name: turnos_web
     ports:
       - "8080:80"
+    volumes:
+      - ./src:/var/www/html
     depends_on:
       - db
-    restart: always
 
   db:
     image: mysql:8.0
