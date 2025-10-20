@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   web:
-    build: ./php
+    build:
+      context: .        # 👈 cambia esto
+      dockerfile: php/Dockerfile
     container_name: turnos_web
     ports:
       - "8080:80"
